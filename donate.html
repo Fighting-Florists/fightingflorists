@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- navigation.html (include in all pages) -->
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="education.html">Education</a>
+</nav>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff8f7;
+  color: #333;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fdf0f4;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  transition: top 0.3s;
+  z-index: 100;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover { opacity: 0.85; }
+
+/* Ribbon Colors */
+.ribbon-cancer { background-color: #CBA4E0; color: #fff; }
+.ribbon-mental { background-color: #228B22; color: #fff; }
+.ribbon-autism { background-color: #ADD8E6; }
+.ribbon-suicide { background-color: #FFF176; }
+.ribbon-heart { background-color: #FF6B6B; color: #fff; }
+.ribbon-breast { background-color: #FFB6C1; }
+
+/* Scroll nav JS */
+</style>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  document.getElementById("navbar").style.top = (prevScrollpos > currentScrollPos) ? "0" : "-80px";
+  prevScrollpos = currentScrollPos;
+};
+</script>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fighting Florists - Donate</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="education.html">Education</a>
+</nav>
+
+<section style="padding:6rem 2rem; text-align:center;">
+  <h1>Support Awareness Causes</h1>
+  <div style="display:grid; gap:1.5rem; margin-top:2rem;">
+    <div class="donate-card ribbon-mental">
+      <h3>Mental Health</h3>
+      <p>Support mental health awareness.</p>
+      <button onclick="window.open('https://cmha.ca/how-you-can-help/donate/','_blank')">Donate to the Canadian Mental Health Association</button>
+    </div>
+    <div class="donate-card ribbon-suicide">
+      <h3>Suicide Prevention</h3>
+      <p>Help save lives and raise awareness.</p>
+      <button onclick="window.open('https://suicideprevention.ca/ways-to-donate/','_blank')">Donate to Canadian Suicide Prevention</button>
+    </div>
+    <div class="donate-card ribbon-heart">
+      <h3>Heart & Stroke</h3>
+      <p>Support heart and stroke awareness.</p>
+      <button onclick="window.open('https://www.heartandstroke.ca/donations?gclid=4eb784e0019419fac410edfa0fe1f2c9&gclsrc=3p.ds&msclkid=4eb784e0019419fac410edfa0fe1f2c9&utm_source=bing&utm_medium=cpc&utm_campaign=PAID-SEARCH_BI_HSF_CNV_NA-CA_PMAX_AlwaysOn_EN_NA_NA_NEW-Masterbrand&utm_term=www.heartandstroke.ca&utm_content=P-Max%20-%20Always%20On%20-%20EN','_blank')">Donate to Heart&Stroke Canada</button>
+    </div>
+    <div class="donate-card ribbon-cancer">
+      <h3>Cancer</h3>
+      <p>Support cancer awareness.</p>
+      <button onclick="window.open('https://cancerresearchsociety.ca/research-saves-lives/?msclkid=77f8da9f6fd31f11ce3eb3856035f22f&utm_source=bing&utm_medium=cpc&utm_campaign=PM%20-%20Year%20End%20(Landing%20page)%20-%20PMAX%2FEN%2F25&utm_term=cancerresearchsociety.ca&utm_content=Remarketing','_blank')">Donate to Cancer Research Society</button>
+    <button onclick="window.open('https://cancer.ca/en/?form=employermatching&_gl=1*e9lrxv*_gcl_au*MTcxMjA0OTQ4LjE3NjIxNzMyMDE.','_blank')">Donate to Canadian Cancer Society</button>
+    </div>
+    <div class="donate-card ribbon-breast">
+      <h3>Breast Cancer</h3>
+      <p>Support breast cancer awareness and charities.</p>
+      <button onclick="window.open('https://breastcancer.ca/','_blank')">Donate to Breast Cancer Canada</button>
+    <button onclick="window.open('https://cbcn.ca/en/donate','_blank')">Donate to the Canadian Breast Cancer Network</button>
+  <button onclick="window.open('https://www.breastcancersupportfund.ca/donate','_blank')">Donate to the Breast Cancer Support Fund</button>  
+  </div>
+    <div class="donate-card ribbon-autism">
+      <h3>Autism</h3>
+      <p>Donating to autism charities allows caregivers and autistic individuals to receive the help and support they need.</p>
+      <button onclick="window.open('https://www.autismcanada.org/donate','_blank')">Donate to Autism Canada</button>
+      <button onclick="window.open('https://www.autism.ca/ways-to-give-2/','_blank')">Donate to SASS</button>
+      <button onclick="window.open('https://autismalliance.ca/donations/','_blank')">Donate to Autism Alliance of Canada</button>
+      <button onclick="window.open('https://cnaf.net/','_blank')">Donate to Canadian National Autism Fund</button>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  &copy; 2025 Fighting Florists. All rights reserved.
+</footer>
+</body>
+</html>

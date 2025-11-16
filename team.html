@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- navigation.html (include in all pages) -->
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="education.html">Education</a>
+</nav>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff8f7;
+  color: #333;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fdf0f4;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  transition: top 0.3s;
+  z-index: 100;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover { opacity: 0.85; }
+
+/* Ribbon Colors */
+.ribbon-cancer { background-color: #CBA4E0; color: #fff; }
+.ribbon-mental { background-color: #228B22; color: #fff; }
+.ribbon-autism { background-color: #ADD8E6; }
+.ribbon-suicide { background-color: #FFF176; }
+.ribbon-heart { background-color: #FF6B6B; color: #fff; }
+.ribbon-breast { background-color: #FFB6C1; }
+
+/* Scroll nav JS */
+</style>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  document.getElementById("navbar").style.top = (prevScrollpos > currentScrollPos) ? "0" : "-80px";
+  prevScrollpos = currentScrollPos;
+};
+</script>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fighting Florists - Team</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="education.html">Education</a>
+</nav>
+
+<section style="padding:6rem 2rem; text-align:center;">
+  <h1>Meet Our Team</h1>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:2rem; margin-top:2rem;">
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Mya Fernandes</h3><p>Co President.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Hitee Dadhwal</h3><p>Co President.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Jessica Oyedeji</h3><p>VP of Production.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Tamas Szilagyi-Kiss</h3><p>VP of Marketing.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Tanishqa Thirumala</h3><p>VP of Human Resources.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Mariam Sakr</h3><p>VP of Marketing.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Arielle Gallant </h3><p>Co-VP of Technology.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Lara Roper</h3><p>Co-VP of Technology.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <div style="background:#fff3f6; padding:1rem; border-radius:10px;">
+      <h3>Pietra De Lucca Veleirinho Rocha</h3><p>VP of finance.</p><div style="height:15px; width:50px; background:#228B22; margin:auto; border-radius:5px;"></div>
+    </div>
+    <!-- Add more team members -->
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  &copy; 2025 Fighting Florists. All rights reserved.
+</footer>
+</body>
+</html>
