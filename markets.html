@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fighting Florists — Markets</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+  /* Basic Styles */
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff8f7;
+    color: #333;
+    overflow-x: hidden;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 4rem 1rem;
+    position: relative;
+  }
+
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fdf0f4;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    transition: top 0.3s;
+    z-index: 100;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Floating Ribbon */
+  .floating {
+    position: absolute;
+    width: 60px;
+    opacity: 0.8;
+    animation: float 12s infinite linear;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-200px) rotate(360deg); }
+  }
+
+  /* Section Backgrounds (Pastels) */
+  #hero { background-color: #ffe6f0; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  #about { background-color: #fef7e1; }
+  #mission { background-color: #e6f7ff; }
+
+  /* Buttons */
+  button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: #ffb6c1;
+    color: #fff;
+  }
+
+  button:hover { opacity: 0.85; }
+
+  /* ======= Markets Page Additions ======= */
+
+  main.market-list {
+    margin-top: 2rem;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .market-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .market-item:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-color: #ff69b4;
+  }
+
+  .market-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #bb2d87;
+  }
+
+  .market-details {
+    display: none;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .market-item:hover .market-details {
+    display: block;
+  }
+
+  section.order-section {
+    background: #ffb6c1; /* light pink */
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    margin: 3rem auto 6rem;
+    max-width: 700px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+    text-align: center;
+  }
+
+  section.order-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  section.order-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #ffe4f1;
+  }
+
+  a.order-button {
+    display: inline-block;
+    background-color: #bb2d87;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  a.order-button:hover {
+    background-color: #ff69b4;
+  }
+</style>
+
+</head>
+<body>
+ 
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="team.html">Team</a>
+    <a href="donate.html">Donate</a>
+    <a href="education.html">Education</a>
+    <a href="markets.html" class="active">Buy</a>
+  </nav>
+<section style="padding:6rem 2rem; text-align:center;"></section>
+  <header>
+    <h1>Upcoming Markets</h1>
+    <p>Come find us at these upcoming markets to get your handcrafted ribbon flowers!</p>
+  </header>
+
+  <main class="market-list">
+
+    <div class="market-item">
+      <div class="market-title">Lipstick Market — Dec 13, 2025</div>
+      <div class="market-details">
+        <p><strong>Notes:</strong> More information to come!</p>
+      </div>
+    </div>
+
+    <div class="market-item">
+      <div class="market-title">Market — 14th, 2025</div>
+      <div class="market-details">
+        <p><strong>Notes:</strong> More information to come!</p>
+      </div>
+    </div>
+
+
+  </main>
+
+  <section class="order-section">
+    <h2>Can't make it to a market?</h2>
+    <p>No problem! Place an order and we'll make it and deliver it to you.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGPxt5N1My0tCJ-qYp4YdINVGOZMc7U4_v5RjKPjsgvQpkQw/viewform?usp=header" target="_blank" rel="noopener" class="order-button">Place an Order</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Fighting Florists. All rights reserved.
+  </footer>
+
+</body>
+</html>
