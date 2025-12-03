@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- navigation.html (include in all pages) -->
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="education.html">Education</a>
+</nav>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff8f7;
+  color: #333;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fdf0f4;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  transition: top 0.3s;
+  z-index: 100;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover { opacity: 0.85; }
+
+/* Ribbon Colors */
+.ribbon-cancer { background-color: #CBA4E0; color: #fff; }
+.ribbon-mental { background-color: #228B22; color: #fff; }
+.ribbon-autism { background-color: #ADD8E6; }
+.ribbon-suicide { background-color: #FFF176; }
+.ribbon-heart { background-color: #FF6B6B; color: #fff; }
+.ribbon-breast { background-color: #FFB6C1; }
+
+/* Scroll nav JS */
+</style>
+
+<script>
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  document.getElementById("navbar").style.top = (prevScrollpos > currentScrollPos) ? "0" : "-80px";
+  prevScrollpos = currentScrollPos;
+};
+</script>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fighting Florists - Education</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="donate.html">Donate</a>
+  <a href="education.html">Education</a>
+  <a href="markets.html">Buy</a>
+</nav>
+
+<section style="padding:6rem 2rem; text-align:center;">
+  <h1>Educational Blog</h1>
+  <p>Learn about each awareness cause and read contributions from our team members.</p>
+
+  <div style="display:grid; gap:2rem; margin-top:2rem; max-width:800px; margin-left:auto; margin-right:auto;">
+    <div class="donate-card ribbon-cancer">
+      <h3>The importance of awareness.</h3>
+      <p>By: Lara Roper</p>
+      <p>Learn about how raising awareness can limit stigma around mental illness and suicide prevention.</p>
+      <button onclick="window.location.href='cancer.html'">Read More</button>
+    </div>
+    <div class="donate-card ribbon-cancer">
+      <h3>Our Resiliant Roses.</h3>
+      <p>By: Jessica Oyedeji</p>
+      <p>Learn about our meanings behind each flower..</p>
+      <button onclick="window.location.href='jessica-blog.html'">Read More</button>
+    </div>
+  
+    <!-- Add more blog posts -->
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  &copy; 2025 Fighting Florists. All rights reserved.
+</footer>
+</body>
+</html>

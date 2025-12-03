@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning through colors - Fighting Florists</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fff8f7;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      max-width: 700px;
+      margin: 1rem auto;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      position: relative;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fdf0f4;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      transition: top 0.3s;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 0.7rem 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      background-color: #ffb6c1;
+      color: #fff;
+    }
+    button:hover { opacity: 0.85; }
+
+    /* Floating Ribbons */
+    .floating {
+      position: absolute;
+      width: 60px;
+      opacity: 0.8;
+      animation: float 12s infinite linear;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-200px) rotate(360deg); }
+    }
+
+    /* Section Backgrounds */
+    #hero { background-color: #ffe6f0; min-height: 40vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    #content { background-color: #fff8f7; padding-bottom: 4rem; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="team.html">Team</a>
+    <a href="donate.html">Donate</a>
+    <a href="education.html">Education</a>
+    <a href="markets.html">Buy</a>
+  </nav>
+
+  <!-- Hero / Blog Title -->
+  <section id="hero">
+    <h1>Understanding Awareness through Color.</h1>
+    <p>Our Ribbons Explained.</p>
+    <p class="date">Posted: November 10, 2025</p>
+    <!-- Floating Pink Ribbons -->
+    <img src="images/pinkribbon.png" class="floating" style="left:10%; animation-duration:12s;">
+    <img src="images/pinkribbon.png" class="floating" style="left:40%; animation-duration:15s;">
+    <img src="images/pinkribbon.png" class="floating" style="left:70%; animation-duration:18s;">
+  </section>
+
+  <!-- Blog Content -->
+  <section id="content">
+   <p>Every flower holds a purpose, and every color reflects a story of strength.</p>
+    <p>In this blog, we share the meanings behind our roses and the powerful causes they support. 
+    We hope these symbols inspire kindness, connection, and understanding for those facing difficult journeys.</p>
+    <h2>Cancer = Lavender</h2>
+    <p>
+      Our lavender roses shine in support of cancer awareness, representing courage, positivity, 
+      and a light to guide those on their journeys. Our goal for our lavender roses is to spread 
+      positivity to each person facing cancer, to acknowledge them, and to support them. Fighting 
+      Florists are eager to take part in the cancer support system; we do this by shining out a 
+      light of support and admiration for all people facing cancer. We believe that when they 
+      glance at our flower, they are reminded of the support and love their supporters have for them.
+    </p>
+    <p>If you’re interested in joining cancer support systems/programs, visit:</p>
+    <p>
+      <a href="https://cancersupportchalmers.ca/">Cancer Support Chalmers</a><br>
+      <a href="https://cancer.ca/en/">Cancer.ca</a><br>
+      <a href="https://www.partnershipagainstcancer.ca/">Partnership Against Cancer</a>
+    </p>
+    <p>If you need help or support, visit:</p>
+    <p>
+      <a href="https://www.cancer.gov/">Cancer.gov</a><br>
+      <a href="https://cancer.ca/en/">Cancer.ca</a>
+    </p>
+
+    <h2>Mental Health = Forest Green</h2>
+    <p>
+      Our green roses glow to promote mental health awareness, creating a safe space for each person 
+      facing mental health issues. Fighting Florists believe that mental health should be recognized 
+      more than it already is. We resolve this problem by spreading awareness and supporting each 
+      person who goes through any mental health diagnosis. We believe that when each person glances 
+      at our flower, they'll have a sense of peace and support.
+    </p>
+    <p>If you need help, don't hesitate to call or text <strong>9-8-8</strong> or visit:</p>
+    <p>
+      <a href="https://cmha.ca/find-info/mental-health/general-info/">CMHA General Info</a><br>
+      <a href="https://cmha.ca/what-we-do/national-programs/">CMHA National Programs</a><br>
+      <a href="https://cmha.ca/find-help/how-to-get-help/">CMHA - How to Get Help</a><br>
+      <a href="https://cmha.ca/find-help/helping-others/">CMHA - Helping Others</a>
+    </p>
+
+    <h2>Autism = Baby Blue</h2>
+    <p>
+      Our blue roses beam to support autism awareness, aiming to promote understanding and 
+      acceptance of Autism Spectrum Disorder (ASD). Our goal is to encourage and celebrate all 
+      autistic individuals and their unique strengths. Fighting Florists believe each autistic 
+      individual is filled with beauty, power, and love.
+    </p>
+    <p>Learn more here:</p>
+    <p>
+      <a href="https://www.autismcanada.org/">Autism Canada</a><br>
+      <a href="https://aidecanada.ca/">AIDE Canada</a>
+    </p>
+
+    <h2>Suicide Prevention = Yellow</h2>
+    <p>
+      Our yellow roses spread awareness for suicide prevention. Fighting Florists believe suicide 
+      needs to be talked about more in our communities. This flower spreads awareness to everyone, 
+      regardless of gender, ethnicity, or background. Suicide is a leading cause of death worldwide, 
+      but small acts of awareness can help someone who is struggling.
+    </p>
+    <p>If you need help, call or text <strong>9-8-8</strong> or visit:</p>
+    <p>
+      <a href="https://cmha.ca/what-we-do/national-programs/">CMHA National Programs</a><br>
+      <a href="https://cmha.ca/find-info/mental-health/general-info/">CMHA Mental Health Info</a>
+    </p>
+
+    <h2>Heart and Stroke = Red</h2>
+    <p>
+      Our red roses symbolize our support for Heart and Stroke Awareness. We aim to honor those 
+      fighting against heart and stroke issues. Research shows around 50% of Canadians are unaware 
+      of Heart and Stroke Awareness Month, so we want to elevate awareness and support.
+    </p>
+    <p>Learn more or get support:</p>
+    <p>
+      <a href="https://www.heartandstroke.ca/">Heart & Stroke Foundation</a><br>
+      <a href="https://www.heartandstroke.ca/heart-disease">Heart Disease Resources</a><br>
+      <a href="https://cpr.heartandstroke.ca/s/?language=en_US">CPR Training</a>
+    </p>
+
+    <h2>Breast Cancer = Pink</h2>
+    <p>
+      Our pink roses bloom proudly for breast cancer awareness. They stand for hope, strength, 
+      courage, and love. We want to support all women facing breast cancer and celebrate their 
+      resilience. Our goal is to share positivity and uplift them on their journey.
+    </p>
+    <p>Resources and support:</p>
+    <p>
+      <a href="https://breastcancer.ca/">BreastCancer.ca</a><br>
+      <a href="https://cancer.ca/en/cancer-information/cancer-types/breast">Cancer.ca — Breast Cancer Info</a><br>
+      <a href="https://www.cbcn.ca/en/">Canadian Breast Cancer Network</a>
+    </p>
+
+
+    <!-- Back Button -->
+    <div style="text-align:center;">
+      <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+    <div style="text-align:center;">
+      <button onclick="window.location.href='education.html'">Back to Education</button>
+    </div>
+  </section>
+
+  <script>
+    // Scroll nav hide/show
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      let currentScrollPos = window.pageYOffset;
+      document.getElementById("navbar").style.top = (prevScrollpos > currentScrollPos) ? "0" : "-80px";
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Fighting Florists. All rights reserved.
+  </footer>
+
+</body>
+</html>

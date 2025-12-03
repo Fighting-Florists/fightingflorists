@@ -1,0 +1,157 @@
+/* =======================
+   GENERAL STYLING
+======================= */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff8f7;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0.5rem 0;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+.date {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin: 0.3rem 0 1rem 0;
+}
+footer {
+  background-color: #fdf0f4;
+  padding: 1rem 0;
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+
+/* =======================
+   NAVIGATION
+======================= */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fdf0f4;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    transition: top 0.3s;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #000;
+}
+a {
+  color: #ff69b4; /* pink */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8cbf; /* lighter pink */
+  text-decoration: underline;
+}
+
+
+/* =======================
+   BUTTONS
+======================= */
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* =======================
+   RIBBON COLORS
+======================= */
+.ribbon-cancer {
+    background-color: #dbb5ef;
+    color: #fff;
+}
+
+.ribbon-mental {
+    background-color: #559b55;
+    color: #fff;
+}
+
+.ribbon-autism {
+    background-color: #ADD8E6;
+    color: #000;
+}
+
+.ribbon-suicide {
+    background-color: #f0e9af;
+    color: #000;
+}
+
+.ribbon-heart {
+    background-color: #e26464;
+    color: #fff;
+}
+
+.ribbon-breast {
+    background-color: #f8cdd4;
+    color: #000;
+}
+
+/* =======================
+   CARDS (Team, Donate, Education)
+======================= */
+.donate-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(120deg, #CBA4E0, #228B22, #ADD8E6, #FFF176, #FF6B6B, #FFB6C1);
+}
+
+/* =======================
+   GRID LAYOUTS
+======================= */
+.team-grid,
+.donate-grid,
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* =======================
+   SCROLL NAVIGATION JS (Needs <script> in HTML)
+======================= */
+/* Add this JS inside <script> tags in your HTML */
